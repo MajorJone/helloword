@@ -29,6 +29,15 @@ dependencies {
 	implementation('org.springframework.boot:spring-boot-starter-data-redis')
 	implementation('org.springframework.boot:spring-boot-starter-freemarker')
 	implementation('org.springframework.boot:spring-boot-starter-web')
-	runtimeOnly('mysql:mysql-connector-java')
+	compile 'mysql:mysql-connector-java:8.0.13'
+	//echarts封装类
+	compile 'com.github.abel533:ECharts:3.0.0.6'
+
+	//公用----start
+	//fastjson
+	compile 'com.alibaba:fastjson:1.2.15'
+
+	//公用---end
+	
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 }
